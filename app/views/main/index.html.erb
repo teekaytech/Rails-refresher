@@ -4,6 +4,10 @@
   Launch demo modal
 </button>
 <p>Hello, <%= Current.user ? Current.user.email : 'stranger' %></p>
+
+<%= button_to 'Connect Twitter', "/auth/twitter", method: :post, class: 'btn btn-primary' %>
+
+
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
