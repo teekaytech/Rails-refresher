@@ -1,6 +1,7 @@
 <h1>Forgot your password?</h1>
 
 <%= form_with url: password_reset_path do |f| %>
+  <%= render 'shared/form_errors', form: f %>
     <div class="mb-3">
       <%= f.label :email %>
       <%= f.email_field :email, class: 'form-control' %>
